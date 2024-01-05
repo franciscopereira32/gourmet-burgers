@@ -10,46 +10,13 @@
   <body>
 
     <header>
-      <!-- add indicators on the bottom -->
-      <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-        <!-- carousel images -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="w-100" src="images/carousel1.jpg" alt="first slide">
-            <div class="carousel-caption">
-              <h5>Made to order</h5>
-              <p>Using only the finest ingredients</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="w-100" src="images/carousel2.jpg" alt="second slide">
-            <div class="carousel-caption">
-              <h5>Over 50 types on our menu</h5>
-              <p>Or build your own</p>
-            </div>
-          </div>
-        </div>
-        <!-- carousel button to navegation -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">Gourment Burgers</a>
-          <button class="navbar-toggler" type="button" data-toogle="collapse">
+          <button class="navbar-toggler" type="button" data-bs-toogle="collapse">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse" data-target="#navbarCollapse">
+          <div class="collapse navbar-collapse" id="navbarCollapse" data-bs-target="#navbarCollapse">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
@@ -63,14 +30,48 @@
                 </a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input>
-              <button type="submit">Search</button>
+            <form class="form-group my-md-1">
+              <input class="form-control" type="text" placeholder="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
+        </div>  
       </nav>
       
     </header>
+    <!-- add indicators on the bottom -->
+    <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <!-- carousel images -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100" src="images/carousel1.jpg" alt="first slide">
+          <div class="carousel-caption">
+            <h5>Made to order</h5>
+            <p>Using only the finest ingredients</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="images/carousel2.jpg" alt="second slide">
+          <div class="carousel-caption">
+            <h5>Over 50 types on our menu</h5>
+            <p>Or build your own</p>
+          </div>
+        </div>
+      </div>
+      <!-- carousel button to navegation -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <div class="container text-center">
         <div class="row">
